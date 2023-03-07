@@ -1,0 +1,20 @@
+{
+  "-NPtsul9jDEqadESAQOE": {
+      "definition": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.",
+      "firebaseKey": "-NPtsul9jDEqadESAQOE",
+      "language": "language",
+      "title": "CSS"
+  },
+  "-NPttpsl6ZaZ-9d30BLW": {
+      "definition": "An application programming interface is a way for two or more computer programs to communicate with each other. It is a type of software interface, offering a service to other pieces of software. A document or standard that describes how to build or use such a connection or interface is called an API specification.",
+      "firebaseKey": "-NPttpsl6ZaZ-9d30BLW",
+      "language": "tech",
+      "title": "Application Programming Interface"
+  },
+  "-NPtzAYUujnSUgy37pJV": {
+    "definition": "At its simplest form, artificial intelligence is a field, which combines computer science and robust datasets, to enable problem-solving. It also encompasses sub-fields of machine learning and deep learning, which are frequently mentioned in conjunction with artificial intelligence. These disciplines are comprised of AI algorithms which seek to create expert systems which make predictions or classifications based on input data.",
+    "firebaseKey": "-NPtzAYUujnSUgy37pJV",
+    "language": "tech",
+    "title": "Artificial Intelligence"
+  }
+}
