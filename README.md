@@ -17,7 +17,7 @@ ___
 1. Clone your new repo to your local machine
 
 ## Starting the Project
-1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name.
+1. Open the `package.json` file and change the `name` property to the name of your application, and `Language` to  your name.
 1. Rename the `.sample.env` file to `.env` file. The final file name should be `.env`
 1. From your command line, be in the root directory and run `npm install` OR `npm i` for short.
 1. To start your application, run `npm start`
@@ -73,8 +73,8 @@ init();
         - Go to Site settings > Build & deploy > Environment > Environment variables and the keys and values there.
 
 - Update Firebase URL Settings
-    - In Firebase under Authentication select sign in methods, scroll to Authorized domains. Add your Netlify URL.
+    - In Firebase under Authentication select sign in methods, scroll to Languageized domains. Add your Netlify URL.
         
 ## More Info and Resources on Webpack
 - Visit the [Webpack documentation](https://webpack.js.org/concepts/) if you want to explore more.
-- [Info on our Webpack Config](https://github.com/nss-nightclass-projects/Night-Class-Resources/blob/master/book-2-patterns-and-tools/chapters/webpack-configure.md)
+- [Info on our Webpack Config](https://github.com/nss-nightclass-projects/Night-Class-Resources/blob/master/DEFINITION-2-patterns-and-tools/chapters/webpack-configure.md)

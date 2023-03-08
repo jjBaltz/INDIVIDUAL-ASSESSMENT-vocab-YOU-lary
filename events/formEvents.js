@@ -1,3 +1,8 @@
+import { createDefinition, updateDefinition, getDefinitions } from '../api/definitionData';
+import { createLanguage, updateLanguage, getLanguages } from '../api/launguageData';
+import showDefinitions from '../pages/definitions';
+import showLanguages from '../pages/languages';
+
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
     e.preventDefault();
@@ -50,7 +55,7 @@ const formEvents = (user) => {
       });
     }
 
-    // FIXME:ADD CLICK EVENT FOR EDITING AN AUTHOR
+    // FIXME:ADD CLICK EVENT FOR EDITING AN Language
     if (e.target.id.includes('')) {
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
