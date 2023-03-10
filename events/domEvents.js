@@ -1,12 +1,12 @@
 import { getDefinitions, getSingleDefinition, deleteDefinition } from '../api/definitionData';
-import { getLanguages, getSingleLanguage } from '../api/launguageData';
+import { getLanguages, getSingleLanguage } from '../api/languageData';
 import showDefinitions from '../pages/definitions';
 import showLanguages from '../pages/languages';
 import addDefinitionForm from '../components/forms/addDefinitionForm';
 import addLanguageForm from '../components/forms/addLanguageForm';
 import viewDefinition from '../pages/viewDefinitions';
 import viewLanguage from '../pages/viewLanguages';
-import { getDefinitionDetails, getLanguageDetails, deleteLanguageDefinitionsRelationship } from '../api/mergedData';
+import { getDefinitionDetails, getLanguageDetails, deleteLanguageDefinitionRelationship } from '../api/mergedData';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -48,7 +48,7 @@ const domEvents = (user) => {
         console.warn('DELETE', e.target.id);
         const [, firebaseKey] = e.target.id.split('--');
 
-        deleteLanguageDefinitionsRelationship(firebaseKey).then(() => {
+        deleteLanguageDefinitionRelationship(firebaseKey).then(() => {
           getLanguages().then(showLanguages);
         });
       }
