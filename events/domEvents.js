@@ -1,7 +1,7 @@
 import { getDefinitions, getSingleDefinition, deleteDefinition } from '../api/definitionData';
 import { getLanguages, getSingleLanguage } from '../api/languageData';
-import showDefinitions from '../pages/definitions';
-import showLanguages from '../pages/languages';
+import { showDefinitions } from '../pages/definitions';
+import { showLanguages } from '../pages/languages';
 import addDefinitionForm from '../components/forms/addDefinitionForm';
 import addLanguageForm from '../components/forms/addLanguageForm';
 import viewDefinition from '../pages/viewDefinitions';
@@ -10,7 +10,7 @@ import { getDefinitionDetails, getLanguageDetails, deleteLanguageDefinitionRelat
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
-    // TODO: CLICK EVENT FOR DELETING A DEFINITION
+    // CLICK EVENT FOR DELETING A DEFINITION
     if (e.target.id.includes('delete-def')) {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete?')) {
@@ -23,25 +23,25 @@ const domEvents = (user) => {
       }
     }
 
-    // TODO: CLICK EVENT FOR SHOWING FORM FOR ADDING A DEFINITION
+    // CLICK EVENT FOR SHOWING FORM FOR ADDING A DEFINITION
     if (e.target.id.includes('add-def-btn')) {
       addDefinitionForm(user);
     }
 
-    // TODO: CLICK EVENT EDITING/UPDATING A DEFINITION
+    // CLICK EVENT EDITING/UPDATING A DEFINITION
     if (e.target.id.includes('edit-def-btn')) {
       const [, firebaseKey] = e.target.is.split('--');
       getSingleDefinition(firebaseKey).then((definitionObj) => addDefinitionForm(user, definitionObj));
     }
 
-    // TODO: CLICK EVENT FOR VIEW DEFINITION DETAILS
+    // CLICK EVENT FOR VIEW DEFINITION DETAILS
     if (e.target.id.includes('view-def-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
 
       getDefinitionDetails(firebaseKey).then(viewDefinition);
     }
 
-    // FIXME: ADD CLICK EVENT FOR DELETING A LANGUAGE
+    // ADD CLICK EVENT FOR DELETING A LANGUAGE
     if (e.target.id.includes('delete-lang-btn')) {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete?')) {
@@ -54,12 +54,12 @@ const domEvents = (user) => {
       }
     }
 
-    // FIXME: ADD CLICK EVENT FOR SHOWING FORM FOR ADDING A LANGUAGE
+    // ADD CLICK EVENT FOR SHOWING FORM FOR ADDING A LANGUAGE
     if (e.target.id.includes('add-lang-btn')) {
       addLanguageForm(user);
     }
 
-    // FIXME: ADD CLICK EVENT FOR EDITING A LANGUAGE
+    // ADD CLICK EVENT FOR EDITING A LANGUAGE
     if (e.target.id.includes('update-lang')) {
       const [, firebaseKey] = e.target.id.split('--');
 

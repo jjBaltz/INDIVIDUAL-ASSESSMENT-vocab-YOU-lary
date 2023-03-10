@@ -1,10 +1,10 @@
-import getLanguages from '../../api/languageData';
 import renderToDOM from '../../utils/renderToDom';
+import { getLanguages } from '../../api/languageData';
 
 const selectLanguage = (uid, languageId) => {
-  let domString = `<label for="author">Select an Author</label>
-    <select class="form-control" id="author_id" required>
-    <option value="">Select an Author</option>`;
+  let domString = `<label for="language">Select a Language</label>
+    <select class="form-control" id="language_id" required>
+    <option value="">Select a Language</option>`;
 
   getLanguages(uid).then((languagesArray) => {
     languagesArray.forEach((language) => {
@@ -18,7 +18,7 @@ const selectLanguage = (uid, languageId) => {
 
     domString += '</select>';
 
-    renderToDOM('#select-author', domString);
+    renderToDOM('#select-language', domString);
   });
 };
 

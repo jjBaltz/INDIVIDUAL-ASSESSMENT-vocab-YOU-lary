@@ -13,9 +13,9 @@ const getDefinitionDetails = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 const getLanguageDetails = (firebaseKey) => new Promise((resolve, reject) => {
-  getSingleLanguage(firebaseKey).then((authorObject) => {
-    getLanguageDefinition(authorObject.firebaseKey)
-      .then((authorBooksArray) => resolve({ authorObject, authorBooksArray }));
+  getSingleLanguage(firebaseKey).then((languageObject) => {
+    getLanguageDefinition(languageObject.firebaseKey)
+      .then((languageDefsArray) => resolve({ languageObject, languageDefsArray }));
   }).catch(reject);
 });
 

@@ -2,7 +2,7 @@ import client from '../utils/client';
 
 const endpoint = client.databaseURL;
 
-// FIXME:  GET ALL LANGUAGES
+// GET ALL LANGUAGES
 const getLanguages = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/languages.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
@@ -29,7 +29,7 @@ const getLanguages = (uid) => new Promise((resolve, reject) => {
 //     .catch(reject);
 // });
 
-// FIXME: CREATE LANGUAGE
+// CREATE LANGUAGE
 const createLanguage = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/languages.json`, {
     method: 'POST',

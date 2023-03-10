@@ -13,7 +13,7 @@ const viewLanguage = (obj) => {
      </div>
    </div>
    <div class="text-white ms-5 details">
-     <h5>${obj.languageObject.title} ${obj.languageObject.definition} '<span class="badge bg-danger"><i class="fa fa-heart" aria-hidden="true"></i></span>' : ''}</h5>  
+     <h5>${obj.languageObject.title} ${obj.languageObject.definition}</h5>  
    </div>
    </div>`;
 

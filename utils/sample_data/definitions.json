@@ -6,7 +6,7 @@
     "tech_id": "-NPtsul9jDEqadESAQOE",
     "timestamp": "19:56",
     "title": "Keyword",
-    "uid": ""
+    "uid": "XQ7SCnt8CQPEgawtRFzNHGQYQzh2"
   },
   "-NPtvAWgnwxJIRsz5orU": {
     "definition": "A POST is an HTTP Verb similar to a GET request, this specifies that a client is posting data on the given Endpoint. A POST request is a method that is used when we need to send some additional information inside the body of the request to the server.",
@@ -15,7 +15,7 @@
     "tech_id": "-NPttpsl6ZaZ-9d30BLW",
     "timestamp": "20:28",
     "title": "POST",
-    "uid": ""
+    "uid": "XQ7SCnt8CQPEgawtRFzNHGQYQzh2"
   },
   "-NPu-Z2gz5Kz3cn5rnhd": {
     "definition": "Strong AI is made up of Artificial General Intelligence (AGI) and Artificial Super Intelligence (ASI). Artificial general intelligence (AGI), or general AI, is a theoretical form of AI where a machine would have an intelligence equaled to humans; it would have a self-aware consciousness that has the ability to solve problems, learn, and plan for the future. Artificial Super Intelligence (ASI)—also known as superintelligence—would surpass the intelligence and ability of the human brain.",
@@ -24,6 +24,6 @@
     "tech_id": "-NPtzAYUujnSUgy37pJV",
     "timestamp": "20:55",
     "title": "Strong AI",
-    "uid": ""
+    "uid": "XQ7SCnt8CQPEgawtRFzNHGQYQzh2"
   }
 }

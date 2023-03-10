@@ -1,13 +1,13 @@
 import { createDefinition, updateDefinition, getDefinitions } from '../api/definitionData';
-import { createLanguage, updateLanguage, getLanguages } from '../api/launguageData';
-import showDefinitions from '../pages/definitions';
-import showLanguages from '../pages/languages';
+import { createLanguage, updateLanguage, getLanguages } from '../api/languageData';
+import { showDefinitions } from '../pages/definitions';
+import { showLanguages } from '../pages/languages';
 
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
     e.preventDefault();
-    // TODO: CLICK EVENT FOR SUBMITTING FORM FOR ADDING A DEFINITION
-    if (e.target.id.includes('')) {
+    // CLICK EVENT FOR SUBMITTING FORM FOR ADDING A DEFINITION
+    if (e.target.id.includes('add-def-btn')) {
       const payload = {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
@@ -24,8 +24,8 @@ const formEvents = (user) => {
       });
     }
 
-    // TODO: CLICK EVENT FOR EDITING A DEFINITION
-    if (e.target.id.includes('')) {
+    // CLICK EVENT FOR EDITING A DEFINITION
+    if (e.target.id.includes('edit-def-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
         title: document.querySelector('#title').value,
@@ -39,8 +39,8 @@ const formEvents = (user) => {
       });
     }
 
-    // FIXME: ADD CLICK EVENT FOR SUBMITTING FORM FOR ADDING A LANGUAGE
-    if (e.target.id.includes('')) {
+    // ADD CLICK EVENT FOR SUBMITTING FORM FOR ADDING A LANGUAGE
+    if (e.target.id.includes('add-lang-btn')) {
       const payload = {
         title: document.querySelector('#title').value,
         language: document.querySelector('#language').value,
@@ -55,8 +55,8 @@ const formEvents = (user) => {
       });
     }
 
-    // FIXME:ADD CLICK EVENT FOR EDITING AN Language
-    if (e.target.id.includes('')) {
+    // ADD CLICK EVENT FOR EDITING A LANGUAGE
+    if (e.target.id.includes('update-lang')) {
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
         title: document.querySelector('#title').value,

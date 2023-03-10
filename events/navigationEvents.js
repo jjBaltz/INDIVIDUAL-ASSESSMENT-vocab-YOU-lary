@@ -1,8 +1,8 @@
-import signOut from '../utils/auth';
-import getDefinitions from '../api/definitionData';
-import showDefinitions from '../pages/definitions';
-import getLaunguages from '../api/launguageData';
-import showLanguages from '../pages/languages';
+import { signOut } from '../utils/auth';
+import { getDefinitions } from '../api/definitionData';
+import { showDefinitions } from '../pages/definitions';
+import { getLanguages } from '../api/languageData';
+import { showLanguages } from '../pages/languages';
 
 const navigationEvents = (user) => {
   // LOGOUT BUTTON
@@ -10,13 +10,13 @@ const navigationEvents = (user) => {
     .addEventListener('click', signOut);
 
   // ALL DEFINITIONS
-  document.querySelector('#all-books').addEventListener('click', () => {
+  document.querySelector('#all-defs').addEventListener('click', () => {
     getDefinitions(user.uid).then(showDefinitions);
   });
 
   // ALL LANGUAGES
-  document.querySelector('#authors').addEventListener('click', () => {
-    getLaunguages(user.uid).then(showLanguages);
+  document.querySelector('#languages').addEventListener('click', () => {
+    getLanguages(user.uid).then(showLanguages);
   });
 
   // STRETCH: SEARCH

@@ -11,7 +11,7 @@ const addLanguageForm = (obj = {}) => {
       </div>
       <div class="form-group">
         <label for="image">Language/Tech</label>
-        <input type="text" class="form-control" id="language" placeholder="Last Name" required>
+        <input type="text" class="form-control" id="language" placeholder="Language Type" required>
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Description</label>

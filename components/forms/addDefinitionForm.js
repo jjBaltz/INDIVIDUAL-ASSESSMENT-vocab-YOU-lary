@@ -9,15 +9,15 @@ const addDefinitionForm = (user, obj = {}) => {
     <form id="${obj.firebaseKey ? `update-def--${obj.firebaseKey}` : 'submit-def'}" class="mb-4">
       <div class="form-group">
         <label for="title">Definition Title</label>
-        <input type="text" class="form-control" id="title" aria-describedby="bookTitle" placeholder="Enter Definition Title" value="${obj.title || ''}" required>
+        <input type="text" class="form-control" id="title" aria-describedby="defTitle" placeholder="Definition Concept" value="${obj.title || ''}" required>
       </div>
       <div class="form-group">
-        <label for="language-type">Definition</label>
-        <textarea class="form-control" placeholder="Language/Tech" id="language" style="height: 100px">${obj.language || ''}</textarea>
+        <label for="language-type">Language/Tech</label>
+        <textarea class="form-control" placeholder="Language/Tech" id="language">${obj.language || ''}</textarea>
       </div>
       <div class="form-group">
         <label for="def-description">Definition</label>
-        <textarea class="form-control" placeholder="Language/Tech" id="language" style="height: 100px">${obj.definition || ''}</textarea>
+        <textarea class="form-control" placeholder="Definition Here" id="definition" style="height: 100px">${obj.definition || ''}</textarea>
       </div>
       <div class="form-group" id="select-language">
       </div>
