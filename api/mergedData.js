@@ -1,6 +1,6 @@
 // for merged promises
 import { getSingleDefinition, deleteDefinition } from './definitionData';
-import { getSingleLanguage, getLanguageDefinition, deleteSingleLanguage } from './launguageData';
+import { getSingleLanguage, getLanguageDefinition, deleteSingleLanguage } from './languageData';
 
 // TODO: Get data for viewBook
 const getDefinitionDetails = (firebaseKey) => new Promise((resolve, reject) => {
