@@ -18,6 +18,7 @@ const showDefinitions = (array) => {
       <div class="card">
         <div class="card-body" style="height: 180px;">
           <h5 class="card-title">${item.title}</h5>
+            <p>${item.definition}</p>
             <i class="btn btn-success fas fa-eye" id="view-def-btn--${item.firebaseKey}"></i>
             <i id="edit-def-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info"></i>
             <i id="delete-def-btn--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt"></i>

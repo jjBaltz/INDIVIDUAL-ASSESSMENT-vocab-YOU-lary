@@ -26,7 +26,7 @@ const addDefinitionForm = (user, obj = {}) => {
     </form>`;
 
   renderToDOM('#form-container', domString);
-  selectLanguage(user, `${obj.language_id || ''}`);
+  selectLanguage(user, `${obj.languageId || ''}`);
 };
 
 export default addDefinitionForm;

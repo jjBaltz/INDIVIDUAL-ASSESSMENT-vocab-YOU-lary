@@ -30,7 +30,8 @@ const domEvents = (user) => {
 
     // CLICK EVENT EDITING/UPDATING A DEFINITION
     if (e.target.id.includes('edit-def-btn')) {
-      const [, firebaseKey] = e.target.is.split('--');
+      console.warn('clicked button');
+      const [, firebaseKey] = e.target.id.split('--');
       getSingleDefinition(firebaseKey).then((definitionObj) => addDefinitionForm(user, definitionObj));
     }
 
